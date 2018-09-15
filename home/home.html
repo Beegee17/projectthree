@@ -5,7 +5,50 @@
 	<title>Brooklyn Outdoor Film Festival</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Styling the home page -->
+<style>
+/*Body content stylization*/
+
+	body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #777;
+  }
+  .container {
+    padding: 80px 120px;
+}
+.poster{
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+}
+/*Footer stylization*/
+}
+  footer{
+      padding: 32px;
+}
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+</style>
 </head>
+
+<!-- The navigation bar -->
 <body>
 	<nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -15,55 +58,64 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="home.htlm">Home</a></li>
       <li><a href="../registry/registry.html">Registry</a></li>
-      <li><a href="#">Films</a></li>
+           	<li class="dropdown">
+        <a  class="active"class="dropdown-toggle" data-toggle="dropdown" href="#">Films
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">The Princess Bride</a></li>
+          <li><a href="#">Labyrinth</a></li>
+          <li><a href="#">The Wizard of Oz</a></li>
+          <li><a href="#">Nausicaa of the Valley of the Wind</a></li>
+          <li><a href="#">The Secret of Nimh</a></li>
+          <li><a href="#">The Last Unicornh</a></li>
+          <li><a href="#">Beetlejuice</a></li>
+          <li><a href="#">My Neighbor Totoro</a></li>
+          <li><a href="#">Raiders of the Lost Ark</a></li>
+
+        </ul>
+      </li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">About Us</a></li>
       <li><a href="../announcements/announcements.html">Announcements</a></li>
     </ul>
   </div>
 </nav>
-<h2>Welcome to the 30th Annual Brookyln Outdoor Film Festival!</h2>
+<li><a href="#home"></a></li>
+<!-- Beginning of the home page -->
+<div class="container">
+<h1>Welcome to the 30th Annual Brookyln Outdoor Film Festival!</h1>
 <p>This year we are hosting a special listing of films to help celebrate this special occassion. We are going to show our original line up of Fantasty films that our festical first aired in 1988.</p>
 
+
+<!-- First set of movies -->
 <h3>On August 5th 2018</h3>
 <p>We will be showing three classical films, the first is The Princess Bride (1987), Labyrinth (1986) and The Wizard of Oz (1939)</p>
-
- <div class="row">
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="../princess_bride/princess-bride-poster.jpg">
-        <img src="../princess_bride/princess-bride-poster.jpg" alt="The Princess Bride Movie Poster" style="width:100%">
-        <div class="caption">
-          <p>The Princess Bride</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="../labyrinth/labyrinth-poster.jpg">
-        <img src="../labyrinth/labyrinth-poster.jpg" alt="Jim Henson'sLabyrinth Movie Poster" style="width:100%">
-        <div class="caption">
-          <p>Jim Henson's Labyrinth</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="thumbnail">
-      <a href="../wizard/wizard-of-oz-poster.jpg">
-        <img src="../wizard/wizard-of-oz-poster.jpg" alt="The Wizard of Oz Movie Poster" style="width:100%">
-        <div class="caption">
-          <p>The Wizard of Oz</p>
-        </div>
-      </a>
-    </div>
-  </div>
 </div>
 
-<h3>On Agust 6th </h3>
-<p>We will be showing animated classics of Nausica and the Valley of the Wind (1984), The Secret of Nihm (1982) and the Last Unicorn (1982)</p>
+	<!-- First set of images -->
+<div class="container textarea">
+ <div class="row">
+    <div class="col-sm-4">
+      <p><strong>The Princess Bride</strong></p><br>
+      <img src="../princess_bride/tn_princess-bride-poster.jpg" alt="The Princess Bride Poster">
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <img src="bandmember.jpg" alt="Random Name">
+    </div>
+    <div class="col-sm-4">
+      <p><strong>Name</strong></p><br>
+      <img src="bandmember.jpg" alt="Random Name">
+    </div>
+  </div>
+  </div>
 
+	<!-- Second set of movies -->
+<div class="container">
+
+<h3>On August 6th </h3>
+<p>We will be showing animated classics of Nausica and the Valley of the Wind (1984), The Secret of Nihm (1982) and the Last Unicorn (1982)</p>
+</div>
 <div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
@@ -97,15 +149,16 @@
   </div>
 </div>
 
-
+<!-- Third set of movies -->
+<div class="container">
 <h3> On August 7th</h3>
 <p> We will be showing Beetlejuice (1988), My Neighbor Totoro (1988) and and Raiders of the Lost Ark (1981) </p>
-
+</div>
 <div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
-      <a href="">
-        <img src="" alt="" style="width:100%">
+      <a href="../beetlejuice/beetlejuice-poster.jpg">
+        <img src="../beetlejuice/beetlejuice-poster.jpg" alt="" style="width:100%">
         <div class="caption">
           <p>Beetlejuice</p>
         </div>
@@ -134,10 +187,11 @@
   </div>
 </div>
 
-
+<!-- Fourth set of movies -->
+<div class="container">
 <h3> On August 8th</h3>
 <p>We will be showing more aminated classics like Castle in the Sky (1986), Who Framed Roger Rabbit (1988) and The Dark Crystal(1982)</p>
-
+</div>
 <div class="row">
   <div class="col-md-4">
     <div class="thumbnail">
@@ -171,5 +225,12 @@
   </div>
 </div>
 
+<!--Beginning of Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p><a href="#" data-toggle="tooltip" title="#">Home</a></p> 
+</footer>
 </body>
 </html>
