@@ -11,7 +11,6 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- Styling the home page -->
 
 </head>
 
@@ -23,40 +22,74 @@
       <a class="navbar-brand" href="#">Brooklyn Outdoor Film Festival</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="home.htlm">Home</a></li>
+      <li class="active"><a href="../home/home.html">Home</a></li>
       <li><a href="../registry/registry.html">Registry</a></li>
            	<li class="dropdown">
         <a  class="active"class="dropdown-toggle" data-toggle="dropdown" href="#">Films
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">The Princess Bride</a></li>
-          <li><a href="#">Labyrinth</a></li>
-          <li><a href="#">The Wizard of Oz</a></li>
-          <li><a href="#">Nausicaa of the Valley of the Wind</a></li>
-          <li><a href="#">The Secret of Nimh</a></li>
-          <li><a href="#">The Last Unicornh</a></li>
-          <li><a href="#">Beetlejuice</a></li>
-          <li><a href="#">My Neighbor Totoro</a></li>
-          <li><a href="#">Raiders of the Lost Ark</a></li>
-
+          <li><a href="../princess_bride/Princess_Bride.html">The Princess Bride</a></li>
+          <li><a href="../labyrinth/Labyrinth.html">Labyrinth</a></li>
+          <li><a href="../wizard/The_Wizard_of_Oz.html">The Wizard of Oz</a></li>
+          <li><a href="../nausica/Nausicaa.html">Nausicaa of the Valley of the Wind</a></li>
+          <li><a href="../secret_of_nihm/the_secret_of_nihm.html">The Secret of Nimh</a></li>
+          <li><a href="../last_unicorn/The_last_unicorn.html">The Last Unicornh</a></li>
+          <li><a href="../beetlejuice/Beetlejuice.html">Beetlejuice</a></li>
+          <li><a href="../totoro/My_neighbor_totoro.html">My Neighbor Totoro</a></li>
+          <li><a href="../raiders/raiders_of_the_lost_ark.html">Raiders of the Lost Ark</a></li>
         </ul>
       </li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">About Us</a></li>
+      <li><a href="../contact_us/contact-us.html">Contact</a></li>
+      <li><a href="../about_us/about-us.html">About Us</a></li>
       <li><a href="../announcements/announcements.html">Announcements</a></li>
     </ul>
   </div>
 </nav>
+
 <div<a href="#home"></a></div>
 <!-- Beginning of the home page -->
 <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="home-1.jpg" alt="People viewing movies in Brooklyn Park">
+    </div>
+
+    <div class="item">
+      <img src="home-2.jpg" alt="People hanging out in Brooklyn Park">
+    </div>
+
+    <div class="item">
+      <img src="home-3.jpg" alt="View of the Brooklyn Bridge">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="home-text">
 <h1>Welcome to the 30th Annual Brookyln Outdoor Film Festival!</h1>
 <p>This year we are hosting a special listing of films to help celebrate this special occassion. We are going to show our original line up of Fantasty films that our festical first aired in 1988.</p>
 
-
 <!-- First set of movies -->
 <h3>On August 5th 2018</h3>
-<p>We will be showing three classical films, the first is The Princess Bride (1987), Labyrinth (1986) and The Wizard of Oz (1939)</p>
+<p>We will be showing three classical films, the first is The Princess Bride, Labyrinth and The Wizard of Oz.</p>
 </div>
 
 	<!-- First set of images -->
@@ -64,15 +97,36 @@
  <div class="row">
     <div class="col-sm-4">
       <p><strong>The Princess Bride</strong></p><br>
-      <img src="../princess_bride/tn_princess-bride-poster.jpg" alt="The Princess Bride Poster">
+      <a href="#demo" data-toggle="collapse">
+      <img src="../princess_bride/tn_princess-bride-poster.jpg" alt="The Princess Bride Poster" class="poster">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Rating: PG</p>
+        <p>Run time: 98 mins</p>
+        <p>Realeased in 1987</p>
+      </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Jim Henson's Labyrinth</strong></p><br>
-      <img src="../labyrinth/tn_labyrinth-poster.jpg" alt="Jim Henson's Labyrinth Poster">
+      <p><strong>Jim Henson's Labyrinth</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">     
+       <img src="../labyrinth/tn_labyrinth-poster.jpg" alt="Jim Henson's Labyrinth Poster" class="poster">
+        </a>
+<div id="demo2" class="collapse">
+        <p>Rating: PG</p>
+        <p>Run time: 101 mins</p>
+        <p>Realeased in 1986</p>
+      </div>
     </div>
     <div class="col-sm-4">
       <p><strong>The Wizard of Oz</strong></p><br>
-      <img src="../wizard/tn_wizard-of-oz-poster.jpg" alt="The Wizard of Oz Poster">
+      <a href="#demo3" data-toggle="collapse"> 
+      <img src="../wizard/tn_wizard-of-oz-poster.jpg" alt="The Wizard of Oz Poster" class="poster">
+    </a>
+    <div id="demo3" class="collapse">
+        <p>Rating: PG</p>
+        <p>Run time: 101 mins</p>
+        <p>Realeased in 1939</p>
+      </div>
     </div>
   </div>
   </div>
@@ -81,21 +135,42 @@
 <div class="container">
 
 <h3>On August 6th </h3>
-<p>We will be showing animated classics of Nausica and the Valley of the Wind (1984), The Secret of Nihm (1982) and the Last Unicorn (1982)</p>
+<p>We will be showing animated classics of Nausica and the Valley of the Wind, The Secret of Nihm and the Last Unicorn.</p>
 </div>
 <div class="container textarea">
  <div class="row">
     <div class="col-sm-4">
       <p><strong>Nausicaa and the Valley of the Wind</strong></p><br>
-      <img src="../nausica/tn_nausicaa-poster.jpeg" alt="Nausicaa and the Valley of the Wind Poster">
+      <a href="#demo4" data-toggle="collapse"> 
+      <img src="../nausica/tn_nausicaa-poster.jpeg" alt="Nausicaa and the Valley of the Wind Poster" class="poster">
+    </a>
+    <div id="demo4" class="collapse">
+        <p>Rating: PG</p>
+        <p>Run time: 117 mins</p>
+        <p>Realeased in 1984</p>
+      </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>The Secret of Nihm</strong></p><br>
-      <img src="../secret_of_nihm/tn_secret-poster.jpg" alt="The Secret of Nihm Poster">
+      <p><strong>The Secret of Nihm</strong></p><br>
+      <a href="#demo5" data-toggle="collapse">
+      <img src="../secret_of_nihm/tn_secret-poster.jpg" alt="The Secret of Nihm Poster" class="poster">
+    </a>
+    <div id="demo5" class="collapse">
+        <p>Rating: G</p>
+        <p>Run time: 83 mins</p>
+        <p>Realeased in 1982</p>
+      </div>
     </div>
     <div class="col-sm-4">
       <p><strong>The Last Unicorn</strong></p><br>
-      <img src="../last_unicorn/tn_last-unicorn-poster.jpg" alt="The Last Unicorn Poster">
+        <a href="#demo6" data-toggle="collapse">
+      <img src="../last_unicorn/tn_last-unicorn-poster.jpg" alt="The Last Unicorn Poster" class="poster">
+    </a>
+    <div id="demo6" class="collapse">
+        <p>Rating: G</p>
+        <p>Run time: 96 mins</p>
+        <p>Realeased in 1986</p>
+      </div>
     </div>
   </div>
   </div>
@@ -103,21 +178,42 @@
 <!-- Third set of movies -->
 <div class="container">
 <h3> On August 7th</h3>
-<p> We will be showing Beetlejuice (1988), My Neighbor Totoro (1988) and and Raiders of the Lost Ark (1981) </p>
+<p> We will be showing Beetlejuice, My Neighbor Totoro and and Raiders of the Lost Ark. </p>
 </div>
 <div class="container textarea">
  <div class="row">
     <div class="col-sm-4">
       <p><strong>Beetlejuice</strong></p><br>
-      <img src="../beetlejuice/tn_beetlejuice-poster.jpg" alt="Beetlejuice Poster">
+          <a href="#demo7" data-toggle="collapse">
+      <img src="../beetlejuice/tn_beetlejuice-poster.jpg" alt="Beetlejuice Poster" class="poster">
+    </a>
+<div id="demo7" class="collapse">
+        <p>Rating: PG</p>
+        <p>Run time: 92 mins</p>
+        <p>Realeased in 1988</p>
+      </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>My Neighbor Totoro</strong></p><br>
-      <img src="../totoro/tn_totoro_poster.png" alt="My Neighbor Totoro Poster">
+      <p><strong>My Neighbor Totoro</strong></p><br>
+      <a href="#demo8" data-toggle="collapse">
+      <img src="../totoro/tn_totoro_poster.png" alt="My Neighbor Totoro Poster" class="poster">
+    </a>
+    <div id="demo8" class="collapse">
+        <p>Rating: G</p>
+        <p>Run time: 86 mins</p>
+        <p>Realeased in 1988</p>
+      </div>
     </div>
     <div class="col-sm-4">
       <p><strong>Raiders of the Lost Ark</strong></p><br>
-      <img src="../raiders/tn_raiders-poster.jpg" alt="Raiders of the Lost Ark Poster">
+      <a href="#demo9" data-toggle="collapse">
+      <img src="../raiders/tn_raiders-poster.jpg" alt="Raiders of the Lost Ark Poster" class="poster">
+    </a>
+    <div id="demo9" class="collapse">
+        <p>Rating: PG</p>
+        <p>Run time: 115 mins</p>
+        <p>Realeased in 1981</p>
+      </div>
     </div>
   </div>
   </div>
@@ -125,21 +221,42 @@
 <!-- Fourth set of movies -->
 <div class="container">
 <h3> On August 8th</h3>
-<p>We will be showing more aminated classics like Castle in the Sky (1986), Who Framed Roger Rabbit (1988) and The Dark Crystal(1982)</p>
+<p>We will be showing more aminated classics like Castle in the Sky, Who Framed Roger Rabbit (1988) and The Dark Crystal(1982)</p>
 </div>
 <div class="container textarea">
  <div class="row">
     <div class="col-sm-4">
       <p><strong>Castle in the Sky</strong></p><br>
-      <img src="../castle_in_the_sky/tn_castle-poster.jpg" alt="Castle in the Sky Poster">
+            <a href="#demo10" data-toggle="collapse">
+      <img src="../castle_in_the_sky/tn_castle-poster.jpg" alt="Castle in the Sky Poster" class="poster">
+    </a>
+     <div id="demo10" class="collapse">
+        <p>Rating: PG</p>
+        <p>Run time: 125 mins</p>
+        <p>Realeased in 1986</p>
+      </div>
     </div>
     <div class="col-sm-4">
-      <p class="text-center"><strong>Who Framed Roger Rabbit</strong></p><br>
-      <img src="../roger_rabbit/tn_rabbit_poster.png" alt="Who Framed Roger Rabbit Poster">
+      <p><strong>Who Framed Roger Rabbit</strong></p><br>
+              <a href="#demo11" data-toggle="collapse">
+      <img src="../roger_rabbit/tn_rabbit_poster.png" alt="Who Framed Roger Rabbit Poster" class="poster">
+    </a>
+     <div id="demo11" class="collapse">
+        <p>Rating: PG</p>
+        <p>Run time: 103 mins</p>
+        <p>Realeased in 1988</p>
+      </div>
     </div>
     <div class="col-sm-4">
       <p><strong>The Dark Crystal</strong></p><br>
-      <img src="../dark_crystal/tn_dark-poster.jpg" alt="Dark Crystal Poster">
+      <a href="#demo12" data-toggle="collapse">
+      <img src="../dark_crystal/tn_dark-poster.jpg" alt="Dark Crystal Poster" class="poster">
+    </a>
+     <div id="demo12" class="collapse">
+        <p>Rating: PG</p>
+        <p>Run time: 93 mins</p>
+        <p>Realeased in 1982</p>
+      </div>
     </div>
   </div>
   </div>
@@ -149,7 +266,67 @@
   <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p><a href="#" data-toggle="tooltip" title="#">Home</a></p> 
+  <!-- Footer -->
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5 class="text-uppercase">Brooklyn Outdoor Film Festival</h5>
+          <p>Where movies are enjoyed in the open air.</p>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.facebook.com/">Facebook</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">Twitter</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">Instagram</a>
+              </li>
+              <li>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="../home/home.html">Home</a>
+              </li>
+              <li>
+                <a href="../contact_us/contact-us.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="../about_us/about-us.html">About Us</a>
+              </li>
+              <li>
+                <a href="../registry/registry.html">Registry</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright: Brooklyn Outdoor Film Festival
+    </div>
+    <!-- Copyright -->
+  <!-- Footer -->
 </footer>
 </body>
 </html>
