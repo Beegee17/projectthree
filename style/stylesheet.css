@@ -9,6 +9,13 @@ a{
   color:gray;
 } 
 
+#googlemap iframe{
+width:100%;
+height: 400px;
+-webkit-filter: grayscale(100%);
+  filter: grayscale(100%); /* make all photos black and white */ 
+}
+
 hr {
     clear: both;
     display: block;
