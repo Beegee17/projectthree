@@ -1,37 +1,116 @@
 /*Body content stylization*/
 
-	body {
-      font: 400 15px/1.8 Lato, sans-serif;
-      color: #777;
-  }
-  .container {
-    padding: 80px 120px;
+body {
+  font: 400 15px/1.8 Lato, sans-serif;
+  color: #777;
+   font-family: 'butlerblack';
+}
+a{
+  color:gray;
+} 
+
+hr {
+    clear: both;
+    display: block;
+    padding: 10px 0 10px 0;
+    border: none;
+    border-bottom: 1px solid;
+    color: #afafaf;
+}
+.container {
+  padding: 80px 120px;
 }
 .poster{
-      border: 10px solid transparent;
-      margin-bottom: 25px;
-      width: 80%;
-      height: 80%;
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  width: 80%;
+  height: 80%;
 }
 .poster:hover {
-    border-color: #f1f1f1;
+  border-color: #f1f1f1;
 }
- .carousel-inner img {
-      -webkit-filter: grayscale(90%);
-      filter: grayscale(90%); /* make all photos black and white */ 
-      width: 100%; /* Set width to 100% */
-      margin: auto;
+.carousel-inner img {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%); /* make all photos black and white */ 
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+}
+.carousel-caption h3 {
+  color: #fff !important;
+}
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
   }
-  .carousel-caption h3 {
-      color: #fff !important;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
+}
 /*Footer stylization*/
- footer .text-center{
-    background-color: #2E2E2E;
-    padding: 32px;
-    display: flex;
-  }
+footer .text-center{
+  background-color: #2E2E2E;
+  padding: 32px;
+}
+footer a {
+  color: white;
+}
+/* Stylized Font*/
+@font-face {
+    font-family: 'butlerblack';
+    src: url('butler_black-webfont.woff2') format('woff2'),
+         url('butler_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'butlerbold';
+    src: url('butler_bold-webfont.woff2') format('woff2'),
+         url('butler_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'butlerextrabold';
+    src: url('butler_extrabold-webfont.woff2') format('woff2'),
+         url('butler_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'butlerlight';
+    src: url('butler_light-webfont.woff2') format('woff2'),
+         url('butler_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'butlermedium';
+    src: url('butler_medium-webfont.woff2') format('woff2'),
+         url('butler_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'butlerregular';
+    src: url('butler_regular-webfont.woff2') format('woff2'),
+         url('butler_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'butlerultralight';
+    src: url('butler_ultra_light-webfont.woff2') format('woff2'),
+         url('butler_ultra_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

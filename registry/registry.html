@@ -4,6 +4,8 @@
 	<title>Registry</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="../style/stylesheet.css">
 
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -29,10 +31,13 @@
           <li><a href="../wizard/The_Wizard_of_Oz.html">The Wizard of Oz</a></li>
           <li><a href="../nausica/Nausicaa.html">Nausicaa of the Valley of the Wind</a></li>
           <li><a href="../secret_of_nihm/the_secret_of_nihm.html">The Secret of Nimh</a></li>
-          <li><a href="../last_unicorn/The_last_unicorn.html">The Last Unicornh</a></li>
+          <li><a href="../last_unicorn/The_last_unicorn.html">The Last Unicorn</a></li>
           <li><a href="../beetlejuice/Beetlejuice.html">Beetlejuice</a></li>
           <li><a href="../totoro/My_neighbor_totoro.html">My Neighbor Totoro</a></li>
           <li><a href="../raiders/raiders_of_the_lost_ark.html">Raiders of the Lost Ark</a></li>
+          <li><a href="../castle/castle_in_the_sky.html">Castle in the Sky</a></li>
+          <li><a href="../roger_rabbit/who_framed_roger_rabbit.html">Who Framed Roger Rabbit</a></li>
+          <li><a href="../dark_crystal/the_dark_crystal.html">The Dark Crystal</a></li>
         </ul>
       </li>
       <li><a href="../contact_us/contact-us.html">Contact</a></li>
@@ -43,73 +48,123 @@
 </nav>
 <div>
 <div class="container">
-	<h3>Please fill in the form below on what days you will be attending, the films you wish to see and what seats you will be reserving.</h3>
 
-	<form method="post" action="target.php">
-		<fieldset>
-		<p>
-			<label>First nsame</label><input type="text" name="firstname" id="firstname" placeholder="Azda" size="30" maxlength="20" autofocus required>
+
+<!-- Default form row -->
+<form>
+    <!-- Grd row -->
+    <div class="form-row" >
+        <!-- Grid column -->
+        <div class="col-md-6">
+            <!-- Default input -->
+            <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6">
+            <!-- Default input -->
+            <input type="text" class="form-control" placeholder="Last name">
+        </div>
+        <!-- Grid column -->
+    </div>
+    <!-- Grd row -->
+    <br />
+    <br />
+<!-- Material input -->
+<div class="form-row">
+ <div class="col-md-6">
+    <i class="fa fa-envelope prefix"></i>
+    <input type="email" id="inputValidationEx" class="form-control validate">
+    <label for="inputValidationEx" data-error="wrong" data-success="right">Type your email</label>
+  </div>
+    
+<div class="col-md-6">
+    <i class="fas fa-phone"></i>
+    <input type="email" id="inputValidationEx" class="form-control validate">
+    <label for="inputValidationEx" data-error="wrong" data-success="right">Type your phone number</label>
+  </div>
+
+  </div>
+    <br />
+    <br />
+    <br />
+    <br />
+<!-- Inline form with checkboxes -->
+<form class="form-inline">
+<i class="fas fa-calendar-alt"></i><br />
+<label>Please select what days you will be attending:</label>
+    <!-- Default checkbox -->
+    <div class="form-check mr-3">
+        <input class="form-check-input" type="checkbox" id="inlineFormCheckbox1" checked="checked">
+        <label class="form-check-label" for="inlineFormCheckbox1">August 5th</label>
+    </div>
+
+   <!-- Default checkbox -->
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="inlineFormCheckbox3" checked="checked">
+        <label class="form-check-label" for="inlineFormCheckbox3">August 6th</label>
+    </div>
+
+     <!-- Default checkbox -->
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="inlineFormCheckbox3" checked="checked">
+        <label class="form-check-label" for="inlineFormCheckbox3">August 7th</label>
+    </div>
+
+    <!-- Default checkbox -->
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="inlineFormCheckbox3" checked="checked">
+        <label class="form-check-label" for="inlineFormCheckbox3">August 8th</label>
+    </div>
+
+<i class="fas fa-ticket-alt"></i>   <label>What shows will you be attending?</label>
+<select class="mdb-select md-form">
+    <option value="" disabled selected>August 5th</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+</select>
+<label>August 5th</label>
+
+<select class="mdb-select md-form">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+</select>
+<label>August 6th</label>
+
+<select class="mdb-select md-form">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+</select>
+<label>August 7th</label>
+
+<select class="mdb-select md-form">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+</select>
+<label>August 8th</label>
+
 <br />
-			<label>Last name</label><input type="text" name="lastname" id="lastname" placeholder="Zoro" size="30" maxlength="30" required>
-
-			<br />
-			<label>Phone Number</label><input type="tel" name="phonenumber" id="phonenumber" placeholder="015674452988" size="30" maxlength="13" required>
-
-			<br />
-			<label>Email</label><input type="email" name="email" id="email" placeholder="gwenfletcher@gmail.com" maxlength="40" required>
-
-			<br />
-			Check the days you will be attending:<br />
-			<input type="checkbox" name="august5th" id="august5th"><label for="august5th">August 5th</label><br />
-
-			<input type="checkbox" name="august6th" id="august6th"><label for="august6th">August 6th</label><br />
-
-			<input type="checkbox" name="august7th" id="august7th"><label for="august7th"> August 7th</label><br />
-
-			<input type="checkbox" name="august8th" id="august8th"><label for="august8th">August 8th</label><br />
-
-			<label for="dates">What movies will you be attending?</label>
-			<select name="dates1" id="dates1">
-				<optgroup label="August 5th">
-					<option value="princess">The Princess Bride 6:00pm</option>
-					<option value="labyrinth">Labyrinth 8:00pm</option>
-					<option value="wizard">The Wizard of Oz 10:00pm</option>
-					<option value="all1"> All day showings august 5th</option>
-				</optgroup>
-			</select>
-			<select name="dates2" id="dates2">
-				<optgroup label="August 6th">
-					<option value="wind">Nausica and the Valley of the Wind 6:00pm</option>
-					<option value="secret">The Secret of Nimh 8:30pm</option>
-					<option value="unicorn">The Last Unicorn 10:30pm</option>
-					<option value="all2"> All day showings August 6th</option>
-				</optgroup>
-			</select>
-			<select name="dates3" id="dates3">
-				<optgroup label="August 7th">
-					<option value="totoro">My Neighbor Totoro 6:00pm</option>
-					<option value="juice">Beetlejuice 8pm</option>
-					<option value="ark">Raiders of the Lost Ark 10:00pm</option>
-					<option value="all3">All day showings August 7th</option>
-				</optgroup>
-			</select>
-			<select>
-				<optgroup label="August 8th">
-					<option value="castle">Castle in the Sky 6:00pm</option>
-					<option value="roger">Who Framed Roger Rabbit 8:30pm</option>
-					<option value="crstal">The Dark Crystal 10:30pm</option>
-					<option value="all4">All day showings August 8th</option>
-				</optgroup>
-			</select>
-			<br />
-			<label for="seatselection">Pic what seats you want and if you need special assitance.</label><br />
-			<textarea name="seatselection" id="seatselection" rows="10" cols="50" maxlength="300" required></textarea>
-		</p>
-		</fieldset>
-	</form>
-	<input type="submit" name="Submit"/>
+    <br />
+    <br />
+<div class="form-group">
+  <i class="fas fa-pencil-alt"></i>
+    <label for="exampleFormControlTextarea1">Let us know what areas you want or require special seating!</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
 </div>
 </div>
+</form>
+<!-- Default form row -->
+</div>
+
+
 <!--Beginning of Footer -->
 <footer class="text-center">
   <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
