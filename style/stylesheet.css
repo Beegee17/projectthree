@@ -19,6 +19,13 @@ height: 400px;
   filter: grayscale(100%); /* make all photos black and white */ 
 }
 
+iframe {
+text-align: center;
+margin: 0 auto;
+display: block;
+width: 500px;
+}
+
 #googlemap {
   height: 395px;
 }
@@ -35,17 +42,37 @@ hr {
   padding: 80px 120px;
 }
 
-.container h3, h1, h5, h2 {
-  text-align: center;
+.movieinfo {
+text-align: center;
 }
 
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+.container h3, h1, h5, h2,{
+  text-align: center;
+}
 
 .poster{
   border: 10px solid transparent;
   margin-bottom: 25px;
-  width: 80%;
-  height: 80%;
+  width: 315px;
+  height: 400px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); /* make all photos black and white */ 
 }
+
+.mini {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ width: 315px;
+  height: 450px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); /* make all photos black and white */ 
+}
+
 .poster:hover {
   border-color: #f1f1f1;
 }
