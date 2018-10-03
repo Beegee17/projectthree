@@ -8,12 +8,19 @@ body {
 a{
   color:gray;
 } 
+.navbar {
+  margin-bottom: 0px;
+}
 
 #googlemap iframe{
 width:100%;
 height: 400px;
 -webkit-filter: grayscale(100%);
   filter: grayscale(100%); /* make all photos black and white */ 
+}
+
+#googlemap {
+  height: 395px;
 }
 
 hr {
@@ -27,6 +34,12 @@ hr {
 .container {
   padding: 80px 120px;
 }
+
+.container h3, h1, h5, h2 {
+  text-align: center;
+}
+
+
 .poster{
   border: 10px solid transparent;
   margin-bottom: 25px;
@@ -42,6 +55,13 @@ hr {
   width: 100%; /* Set width to 100% */
   margin: auto;
 }
+
+#announceimg img{
+   -webkit-filter: grayscale(90%);
+  filter: grayscale(90%); /* make all photos black and white */ 
+  width: 100%; /* Set width to 100% */
+}
+
 .carousel-caption h3 {
   color: #fff !important;
 }
@@ -54,6 +74,12 @@ hr {
 footer .text-center{
   background-color: #2E2E2E;
   padding: 32px;
+}
+
+.text-center {
+  text-align: center;
+  background-color: #2E2E2E;
+  margin-top: 5px; 
 }
 footer a {
   color: white;

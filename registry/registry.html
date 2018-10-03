@@ -47,11 +47,51 @@
   </div>
 </nav>
 <div>
+
 <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="brooklyn-1.jpg" alt="Dinner party gone wrong, mutant hands emerging from bowls">
+    </div>
 
+    <div class="item">
+      <img src="brooklyn-2.jpg" alt="Two characters from film, woman's finger tips on fire">
+    </div>
+
+    <div class="item">
+      <img src="brooklyn-3.jpg" alt="Ugly groom, reluctant red bride">
+    </div>
+
+    <div class="item">
+      <img src="brooklyn-4.jpg" alt="two characters sitting in underworld waiting room">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<div class="container">
 <!-- Default form row -->
 <form>
+  <label>Please complete the form below to reserve your seats!</label>
     <!-- Grd row -->
     <div class="form-row" >
         <!-- Grid column -->
@@ -84,72 +124,80 @@
     <input type="email" id="inputValidationEx" class="form-control validate">
     <label for="inputValidationEx" data-error="wrong" data-success="right">Type your phone number</label>
   </div>
-
   </div>
-    <br />
+  <br />
+  <br />
     <br />
     <br />
     <br />
 <!-- Inline form with checkboxes -->
-<form class="form-inline">
-<i class="fas fa-calendar-alt"></i><br />
+<form>
+  <i class="fas fa-calendar-alt"></i><br />
 <label>Please select what days you will be attending:</label>
+  <div class="row">
+  <div class="col-md-4">
     <!-- Default checkbox -->
     <div class="form-check mr-3">
         <input class="form-check-input" type="checkbox" id="inlineFormCheckbox1" checked="checked">
         <label class="form-check-label" for="inlineFormCheckbox1">August 5th</label>
     </div>
-
    <!-- Default checkbox -->
     <div class="form-check">
         <input class="form-check-input" type="checkbox" id="inlineFormCheckbox3" checked="checked">
         <label class="form-check-label" for="inlineFormCheckbox3">August 6th</label>
     </div>
-
      <!-- Default checkbox -->
     <div class="form-check">
         <input class="form-check-input" type="checkbox" id="inlineFormCheckbox3" checked="checked">
         <label class="form-check-label" for="inlineFormCheckbox3">August 7th</label>
     </div>
-
+</div>
     <!-- Default checkbox -->
     <div class="form-check">
         <input class="form-check-input" type="checkbox" id="inlineFormCheckbox3" checked="checked">
         <label class="form-check-label" for="inlineFormCheckbox3">August 8th</label>
     </div>
-
+</div>
+<br />
+<br />
 <i class="fas fa-ticket-alt"></i>   <label>What shows will you be attending?</label>
-<select class="mdb-select md-form">
-    <option value="" disabled selected>August 5th</option>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-</select>
+<br />
 <label>August 5th</label>
-
 <select class="mdb-select md-form">
     <option value="" disabled selected>Choose your option</option>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
+    <option value="1">The Princess Bride 6:00pm</option>
+    <option value="2">Jim Henson's Labyrinth 8:00pm</option>
+    <option value="3">The Wizard of Oz 10:00pm</option>
+    <option value="4">All day showings August 5th</option>
 </select>
+<br />
 <label>August 6th</label>
-
 <select class="mdb-select md-form">
     <option value="" disabled selected>Choose your option</option>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
+    <option value="1">Nausicaa and the Valley of the Wind 6:00pm</option>
+    <option value="2">The Secret of Nihm 8:30pm</option>
+    <option value="3">The Last Unicorn 10:30pm</option>
+    <option value="4">All day showings August 6th</option>
 </select>
+<br />
 <label>August 7th</label>
-
 <select class="mdb-select md-form">
     <option value="" disabled selected>Choose your option</option>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
+    <option value="1">My Neighbor Totoro 6:00pm</option>
+    <option value="2">Beetlejuice 8:00pm</option>
+    <option value="3">Raiders of the Lost Ark 10:00pm</option>
+    <option value="4">All day showings August 7th</option>
 </select>
+<br />
 <label>August 8th</label>
+<select class="mdb-select md-form">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Castle in the Sky 6:00pm</option>
+    <option value="2">Who Framed Roger Rabbit 8:30pm</option>
+    <option value="3">The Dark Crystal 10:30pm</option>
+    <option value="4">All day showings August 8th</option>
+</select>
+
 
 <br />
     <br />
@@ -158,12 +206,18 @@
   <i class="fas fa-pencil-alt"></i>
     <label for="exampleFormControlTextarea1">Let us know what areas you want or require special seating!</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+<br />
+    <button type="submit" class="btn btn-primary my-1" >Submit</button>
 </div>
 </div>
+
 </form>
 <!-- Default form row -->
 </div>
-
+<!--Google map-->
+<div id="googlemap">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.8391574455686!2d-73.99956638463539!3d40.69953987933318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a46a369a18d%3A0xa109779d5185c305!2sBrooklyn+Bridge+Park!5e0!3m2!1sen!2sus!4v1538241201003" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
 
 <!--Beginning of Footer -->
 <footer class="text-center">
@@ -188,13 +242,13 @@
             <!-- Links -->
             <h5 class="text-uppercase">Links</h5>
             <ul class="list-unstyled">
-              <li>
+              <li><i class="fab fa-facebook-square"></i>
                 <a href="https://www.facebook.com/">Facebook</a>
               </li>
-              <li>
+              <li><i class="fab fa-twitter-square"></i>
                 <a href="https://twitter.com/">Twitter</a>
               </li>
-              <li>
+              <li><i class="fab fa-instagram"></i>
                 <a href="https://www.instagram.com/">Instagram</a>
               </li>
               <li>
@@ -202,21 +256,42 @@
             </ul>
           </div>
           <!-- Grid column -->
-          <!-- Grid column -->
           <div class="col-md-3 mb-md-0 mb-3">
             <!-- Links -->
             <h5 class="text-uppercase">Links</h5>
             <ul class="list-unstyled">
               <li>
+                <i class="fas fa-tree"></i>
+                <a href="https://www.brooklynbridgepark.org/">Brooklyn Bridge Park</a>
+              </li>
+              <li>
+                <i class="fas fa-city"></i>
+                <a href="https://www1.nyc.gov">City of New York</a>
+              </li>
+              <li>
+                <i class="fas fa-landmark"></i>
+                <a href="http://www.brooklyn-usa.org/">Brooklyn Borough</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <i class="fas fa-home"></i>
                 <a href="../home/home.html">Home</a>
               </li>
               <li>
+                <i class="fas fa-envelope-open"></i>
                 <a href="../contact_us/contact-us.html">Contact Us</a>
               </li>
               <li>
+                <i class="fas fa-address-card"></i>
                 <a href="../about_us/about-us.html">About Us</a>
               </li>
               <li>
+                <i class="fas fa-pen-square"></i>
                 <a href="../registry/registry.html">Registry</a>
               </li>
             </ul>
